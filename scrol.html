@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Buttons -->
+<div class="d-flex justify-content-between mb-2">
+    <button class="btn btn-secondary" onclick="scrollGallery(-1)">← Back</button>
+    <button class="btn btn-secondary" onclick="scrollGallery(1)">Forward →</button>
+  </div>
+  
+  <!-- Gallery Row -->
+  <div id="galleryRow" class="d-flex overflow-auto" style="scroll-behavior: smooth; gap: 1rem;">
+    <div class="card" style="width: 18rem; min-width: 18rem;">
+      <img src="/image/bg_imge_contact.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Image 1 description.</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; min-width: 18rem;">
+      <img src="/image/bg_imge_contact.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Image 2 description.</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; min-width: 18rem;">
+        <img src="/image/bg_imge_contact.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Image 1 description.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; min-width: 18rem;">
+        <img src="/image/bg_imge_contact.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Image 1 description.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; min-width: 18rem;">
+        <img src="/image/bg_imge_contact.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Image 1 description.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; min-width: 18rem;">
+        <img src="/image/bg_imge_contact.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Image 1 description.</p>
+        </div>
+      </div>
+    <!-- Add more cards as needed -->
+  </div>
+  
+  <!-- JavaScript to Scroll -->
+  <script>
+    function scrollGallery(direction) {
+      const gallery = document.getElementById('galleryRow');
+      const scrollAmount = 300; // adjust based on card width
+      gallery.scrollLeft += direction * scrollAmount;
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+</body>
+</html>

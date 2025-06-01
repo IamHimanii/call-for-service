@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="container-heading">
+        <h2 class="text-danger"><strong>Featured Services</strong></h2>
+    </div>
+    <div class="container-body">
+        <div class="d-flex justify-content-between mb-2">
+            <button class="btn btn-secondary" onclick="scrollGallery(-1)">← Back</button>
+            <button class="btn btn-secondary" onclick="scrollGallery(1)">Forward →</button>
+        </div>
+        <!-- Gallery Row -->
+        <div id="galleryRow" class="d-flex overflow-hidden " style="scroll-behavior: smooth; gap: 1rem;">
+            <div class="col-xs-12 col-sm-3" ng-repeat="service in featuredServiceList">
+                <a href="{{service.link}}">
+                    <!-- <div id="galleryRow" class="d-flex overflow-auto" style="scroll-behavior: smooth; gap: 1rem;"> -->
+                    <div class="card  featured-card">
+                        <img ng-src="{{service.imageUrl}}" class="card-img-top rounded" alt="image of worker"
+                            height="200px" width="100px">
+                        <div class="card-body">
+                            <p class="card-text"><strong>{{service.post}}</strong></p>
+                            <div class="row">
+                                <div class="col">
+                                    <h6>Call for Service</h6>
+                                </div>
+                                <div class="col d-flex justify-content-end">
+                                    <span class="fa fa-star checked text-warning me-1"></span>
+                                    <span class="me-1">
+                                        <h6><strong>{{service.currentrating}}</strong></h6>
+                                    </span>
+                                    <span>
+                                        <h6>{{(service.rating)}}</h6>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <h6 class="text-danger">{{service.rate}}</h6>
+                            </div>
+                            <div>
+                                <p>{{service.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </a>
+            </div>
+        </div>
+        <!-- JavaScript to Scroll -->
+        <script>
+            function scrollGallery(direction) {
+                const gallery = document.getElementById('galleryRow');
+                const scrollAmount = 300; // adjust based on card width
+                gallery.scrollLeft += direction * scrollAmount;
+            }
+        </script>
+    </div>
+</div>

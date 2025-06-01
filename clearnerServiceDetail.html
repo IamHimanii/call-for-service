@@ -1,0 +1,81 @@
+<div class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col-lg-8 col-md-6">
+            <div class="http://127.0.0.1:5501/serviceProviderDetail.html#col-12">
+                <h2 class="text-danger">{{serviceDetail.post}}</h2>
+                <h6>by <strong class="text-danger">Call For Service</strong></h6>
+            </div>
+            <img ng-src="{{serviceDetail.imageUrl}}" class="rounded img-fluid" alt="" style="height: 500px; width: 820px;">
+            <h6 class="mt-4">{{serviceDetail.description}}</h6>
+            <div class="row mt-5">
+                <div class="col">
+                    <h5><strong class="text-danger">Reviews</strong> (0 reviews for this service)</h5>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <span class="fa fa-star checked text-danger ms-2"></span>
+                    <span class="fa fa-star checked text-danger ms-2"></span>
+                    <span class="fa fa-star checked text-danger ms-2"></span>
+                    <span class="fa fa-star ms-2"></span>
+                    <span class="fa fa-star ms-2 "></span>
+                    <h6 class="ms-2">0.0</h6>
+                </div>
+            </div>
+            <div class="d-flex align-items-center  procolor">
+                <strong class="me-2">5 Star</strong>
+                <div class="progress flex-grow-1">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6"><!--col-4-->
+            <div class="card card-detail">
+                <div class="card-body">
+                    <h3 class="card-title"><strong class="text-danger">Book a Service</strong></h3>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <h5><strong>Price</strong></h5>
+                        </div>
+                        <div class="col text-end">
+                            <h5><strong>{{serviceDetail.price}}</strong></h5>
+                        </div>
+                    </div>
+                    <div class="mt-3 pe-2 ps-4 bcolor me-2 ms-2">
+                        <h6 class="text-danger">Price Description</h6>
+                        <h6>{{serviceDetail.pricedescription}}</h6>
+                    </div>
+                    <div class="mt-4">
+                        <h5><strong>Select Date</strong></h5>
+                        <p> {{detail.datetime}}</p>
+                    </div>
+                     <!--day section-->
+                    <div class="d-flex flex-row gap-2">
+                        <div ng-repeat="day in serviceDetail.dayList">
+                            <input type="radio" class="btn-check" name="day" id="{{day}}" value="{{day}}"
+                                ng-model="selectedDay" autocomplete="off">
+                            <label class="btn btn-outline-danger slim-btn" for="{{day}}">
+                                <span style="display: block;">{{day.split(' ')[0]}}</span>
+                                <span style="display: block;">{{day.split(' ')[1]}}</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="dayButtons"></div>
+                    <div class="mt-4">
+                        <h5><strong>Choose a time period</strong></h5>
+                        <h6>Team will arrive within the selected time</h6>
+                    </div>
+                    <div class="d-flex flex-row gap-2">
+                        <div ng-repeat="date in serviceDetail.dateList">
+                            <input type="radio" class="btn-check" name="date" id="{{date}}" value="{{date}}"
+                                ng-model="selectedDate" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="{{date}}">{{date}}</label>
+                        </div>
+                    </div>
+                    <div id="dateButtons"></div>
+                    <!--button section-->
+                    <div class="mt-4 d-flex justify-content-center"> <a href="#"
+                            class="btn btn-danger btn-lg w-100">Book Now</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

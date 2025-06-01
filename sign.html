@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- <style>
+        /* Remove border from input */
+        .custom-input {
+            border: none;
+            border-bottom: 2px solid #ccc;
+            /* Add a bottom border */
+            border-radius: 0;
+            /* Remove border radius */
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        /* Change bottom border color on focus */
+        .custom-input:focus {
+            border-bottom-color: rgb(145, 145, 60);
+            /* Add color for focus (blue in this case) */
+        }
+
+        /* Change bottom border color on hover */
+        .custom-input:hover {
+            border-bottom-color: rgb(145, 145, 60);
+            /* Change color on hover (green in this case) */
+        }
+
+        /* Custom background color with opacity */
+        .custom-input.bg-opacity {
+            background-color: rgba(108, 117, 125, 0.5);
+            /* bg-secondary with 50% opacity */
+        }
+
+        .btn-custom {
+            background-color: (0, 71.71);
+            border: none;
+            color: white;
+            padding: 15px 28px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 3px 2px;
+            box-shadow: 0 5px 10px 0(0, 50, 98);
+        }
+
+        .btn-custom:hover {
+            background-color: #240858;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <div class="card shadow-lg">
+                    <div class="pe-5 ps-5">
+                        <h4 class="mt-4 "> Let'Connect</h4>
+                        <div class="row ">
+                            <div class="col">
+                                <input type="text" name="name" id="name" class="form-control mb-2 custom-input"
+                                    placeholder="Enter First Name">
+                            </div>
+                            <div class="col">
+                                <input type="text" name="surname" id="sur" class="form-control  mb-2 custom-input "
+                                    placeholder=" Enter Last Name">
+                            </div>
+                        </div>
+                        <input type="email" name="email" id="email" class="form-control mb-2 custom-input "
+                            placeholder="Email Address ">
+                        <input type="tel" name="number" id="number" class="form-control  mb-2 custom-input "
+                            placeholder="Contact Number">
+                        <textarea name="message" id="message" cols="10" rows="5" class="form-control custom-input">
+                        </textarea>
+                        <button class="btn btn-primary btn-custom mt-3 shadow-lg mb-5 " type="submit">Send
+                            Message</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+
+
+    
+    <div class="container mt-5">
+        <div class="card shadow-lg p-4">
+          <div class="card-body">
+            <h4 class="card-title text-center mb-3">Login</h4>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+      
+              <div class="form-group mt-3">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+      
+              <!-- Checkbox and Forgot Password in the same row -->
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <a href="#" class="text-warning text-decoration-none">Forgot Password?</a>
+              </div>
+      
+              <!-- Buttons in the same row -->
+              <div class="d-flex justify-content-between mt-4">
+                <button type="submit" class="btn btn-outline-warning">Submit</button>
+                <button type="button" class="btn btn-outline-warning"><a href="#" class="text-decoration-none"> SignUp</a></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-- Link to Open Modal -->
+<a href="#" class="text-warning text-decoration-none" data-bs-toggle="modal" data-bs-target="#loginModal">
+    Open Login Form
+  </a>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Form Inside Modal -->
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+  
+            <div class="form-group mt-3">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+  
+            <!-- Checkbox and Forgot Password in the same row -->
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+              </div>
+              <a href="#" class="text-warning text-decoration-none">Forgot Password?</a>
+            </div>
+  
+            <!-- Buttons -->
+            <div class="d-flex justify-content-between mt-4">
+              <button type="submit" class="btn btn-outline-warning">Submit</button>
+              <button type="button" class="btn btn-outline-warning">
+                <a href="#" class="text-decoration-none text-dark">Sign Up</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  
+
+  <!-- Bootstrap CSS & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

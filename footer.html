@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Footer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Footer Styling */
+        .footer {
+            background-color: #13315c; /* Light gray background */
+            padding: 40px 0;
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+
+        .footer-logo {
+            font-size: 25px;
+            font-weight: bold;
+            color:white; /* Orange color */
+            flex-wrap: wrap;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+           
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color:white;
+            font-size: 16px;
+        }
+
+        .footer-links a:hover {
+            color: #8DA9C4;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            font-size: 22px;
+            margin-right: 15px;
+            color:white;
+        }
+
+        .social-icons a:hover {
+            color:#8DA9C4;
+        }
+
+        .newsletter-text {
+            font-size: 16px;
+            font-weight: bold;
+            color:white;
+            margin-bottom: 10px;
+        }
+
+        .subscribe-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #8DA9C4;
+            border-radius: 5px;
+        }
+
+        .subscribe-btn {
+            margin-top: 8px;
+            padding: 8px 10px;
+            background-color:#8DA9C4;
+            border: 2px solid #8DA9C4;
+            color:white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #134074;
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Company Logo and Navigation Links -->
+            <div class="col-4">
+                <div class="footer-logo">Call For Service</div>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="col-4 mt-5">
+                <ul class="footer-links">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="col-4">
+                <p class="newsletter-text">Get the latest call for service news.</p>
+                <input type="email" class="subscribe-input" placeholder="Your email here">
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="row mt-3">
+            <div class="col text-center">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+            Copyright © 2024 Auto Soft Pvt. Ltd. all rights reserved
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

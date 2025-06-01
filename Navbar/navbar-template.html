@@ -1,0 +1,135 @@
+<!--navbar section-->
+<div class="container mb-5 nav-margin">
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CFS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#!/electricians">
+                                    <i class="fas fa-lightbulb me-2"></i>Electrician
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#!/plumbercard">
+                               <i class="fas fa-wrench me-2"></i> Plumbing</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#!/cleaning">
+                                <i class=" fa fa-broom"></i> Cleaning</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#!/it">
+                               <i class="fa fa-laptop-code"></i> IT Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/customerreview">Customer Review
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!/request-for-service">Get Request</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-color me-2" type="submit">Search</button>
+                    <button class="btn btn-color" type="submit"><a href="#" class="text-decoration-none login"
+                            data-bs-toggle="modal" data-bs-target="#loginModal">
+                            LogIn
+                        </a></button>
+                    <!-- Profile icon with dropdown -->
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                        <div class="dropdown">
+                            <button
+                                class="btn profile-icon text-white rounded-circle d-flex justify-content-center align-items-center"
+                                type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-user text-light"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                                <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                        data-bs-target="#passwordModal">Password</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="passwordModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-light">Change Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="npass" class="form-label">New Password</label>
+                            <input id="npass" type="password" class="form-control" placeholder="New Password" required>
+                        </div>
+                        <div id="emailError" class="error"></div>
+                        <div class="mb-3">
+                            <label for="opass" class="form-label">Old Password</label>
+                            <input id="opass" type="password" class="form-control" placeholder="Old password"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cpass" class="form-label">Confirm Password</label>
+                            <input id="cpass" type="password" class="form-control" placeholder="Confirm password"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rpass" class="form-label">Reset Password</label>
+                            <input id="rpass" type="password" class="form-control" placeholder="Reset password"
+                                required>
+                        </div>
+                        <div id="passwordError" class="error"></div>
+                        <button type="submit" class="btn w-100 btn-color">Login</button>
+                    </form>
+                </div>
+                <div class="d-flex justify-content-center mb-2">
+                    <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

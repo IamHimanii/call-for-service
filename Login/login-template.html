@@ -1,0 +1,50 @@
+<!--  login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Form Inside Modal -->
+                <div id="loginForm">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" placeholder="Enter email" required>
+                        </div>
+                        <div id="emailError" class="error"></div>
+                        <div class="mb-3">
+                            <label for="raj" class="form-label">Password</label>
+                            <input id="raj" type="password" class="form-control" placeholder="Enter password" required>
+                        </div>
+                        <div id="passwordError" class="error"></div>
+                        <button type="submit" class="btn w-100 btn-color">Login</button>
+                    </form>
+                    <p class="text-center mt-3 text-primary"><a href="#">Forgot password?</a></p>
+                    <div class="text-center mt-3">
+                        <p>Don't have an account?</p>
+                        <button type="submit" class="btn btn-color btn-sm" id="openSignup">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--js for signup and login-->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const openSignupBtn = document.getElementById('openSignup');
+  const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+  const signupModal = new bootstrap.Modal(document.getElementById('signupModal'));
+
+  if (openSignupBtn) {
+    openSignupBtn.addEventListener('click', function (e) {
+      e.preventDefault(); // prevent link from navigating
+      bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();
+      signupModal.show();
+    });
+  }
+});
+</script>

@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <img src="{{serviceDetail.imageUrl}}" class="rounded img-fluid w-100 rounded ps-3" alt="" style="height: 500px; width: 820px;">
+            <h1 class="mt-5 text-center ps-3 text-danger"><strong>{{serviceDetail.post}}</strong></h1>
+            <p class="ps-3">{{serviceDetail.description}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 mt-5" ng-repeat="package in serviceDetail.amcList">
+            <div class="card card-size">
+                <h4 class="card-header text-center gradient">{{package.name}}</h4>
+                <div class="card-body">
+                    <h3 class="card-title text-center">NPR
+                        <strong class="amc-card">{{package.price}}</strong>
+                        /mo
+                    </h3>
+                    <p class="card-text text-center">Monthly Billing</p>
+                    <a href="#" class="btn d-flex justify-content-center btn-lg packagebtn"><strong>Book
+                            Now</strong></a>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center cl" ng-repeat="bullet in package.bullets">
+                            <i class="bi bi-check text-success me-2"></i>
+                            <span class="custom-text-class">{{bullet}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

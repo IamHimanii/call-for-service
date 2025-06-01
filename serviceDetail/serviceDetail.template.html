@@ -1,0 +1,183 @@
+<div class="container" ng-repeat="product in $ctrl.providerDetailList">
+    <div class="container-heading">
+        <div class=""><!--http://127.0.0.1:5501/serviceProviderDetail.html#col-12-->
+            <h2 class="text-danger">Plumbing: Tap Installation</h2>
+            <h6>by <strong class="text-danger">Call For Service</strong></h6>
+        </div>
+    </div>
+    <div class="container-body">
+        <div class="row">
+            <div class="col-lg-8 col-md-6" ng-if="service">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="{{service.imageUrl}}" class="rounded img-fluid" alt="" height="600px" width="850px">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-4">
+                        <h6>{{service.p}}</h6>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col">
+                        <h5><strong class="text-danger">Reviews</strong> (0 reviews for this service)</h5>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+                        <span class="fa fa-star checked text-danger ms-2"></span>
+                        <span class="fa fa-star checked text-danger ms-2"></span>
+                        <span class="fa fa-star checked text-danger ms-2"></span>
+                        <span class="fa fa-star ms-2"></span>
+                        <span class="fa fa-star ms-2 "></span>
+                        <h6 class="ms-2">{{service.rating}}</h6>
+                    </div>
+                </div>
+                <div class="row procolor mb-3">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="d-flex align-items-center">
+                                <strong class="me-2">5 Star</strong>
+                                <div class="progress flex-grow-1">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="d-flex align-items-center">
+                                <strong class="me-2">4 Star</strong>
+                                <div class="progress flex-grow-1">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="d-flex align-items-center">
+                                <strong class="me-2">3 Star</strong>
+                                <div class="progress flex-grow-1">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="d-flex align-items-center">
+                                <strong class="me-2">2 Star</strong>
+                                <div class="progress flex-grow-1">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex align-items-center">
+                                <strong class="me-2">1 Star</strong>
+                                <div class="progress flex-grow-1">
+                                    <div class="progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6"><!--col-4-->
+                <div class="card card-detail">
+                    <div class="card-body">
+                        <h3 class="card-title"><strong class="text-danger">Book a Service</strong></h3>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <h5><strong>Price</strong></h5>
+                            </div>
+                            <div class="col">
+                                <h5><strong>{{service.Rs}}</strong></h5>
+                            </div>
+                        </div>
+                        <div class="row mt-4 pe-2 ps-4 bcolor me-2 ms-2">
+                            <div class="col-12">
+                                <h6 class="text-danger">Price Description</h6>
+                                <h6>{{service.detail}}</h6>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h5><strong>Select Date</strong></h5>
+                            Thus, May
+                        </div>
+                        <!--day section-->
+                        <div class="row mt-4 ms-3">
+                            <div class="col-10 d-flex gap-2 flex-wrap">
+                                <input type="radio" class="btn-check" name="day" id="sun" value="Sun"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-danger" for="sun">Sun</label>
+
+                                <input type="radio" class="btn-check" name="day" id="mon" value="Mon"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-danger" for="mon">Mon</label>
+
+                                <input type="radio" class="btn-check" name="day" id="tue" value="Tue"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-danger" for="tue">Tue</label>
+
+                                <input type="radio" class="btn-check" name="day" id="wed" value="Wed"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-danger" for="wed">Wed</label>
+
+                                <input type="radio" class="btn-check" name="day" id="thu" value="Thu"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-danger" for="thu">Thu</label>
+
+                                <input type="radio" class="btn-check" name="day" id="fri" value="Fri"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-danger" for="fri">Fri</label>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <h5><strong>Choose a time period</strong></h5>
+                            <h6>Team will arrive within the selected time</h6>
+                        </div>
+                        <!--time choosing section-->
+                        <div class="row me-3 ms-5 mt-4">
+                            <div class="col-10">
+                                <input type="radio" class="btn-check" name="timeslot" id="slot1" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="slot1">5AM-9AM</label>
+
+                                <input type="radio" class="btn-check" name="timeslot" id="slot2" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="slot2">5AM-9AM</label>
+
+                                <input type="radio" class="btn-check" name="timeslot" id="slot3" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="slot3">5AM-9AM</label>
+                            </div>
+                        </div>
+                        <div class="row me-3 ms-5 mt-3">
+                            <div class="col-10">
+                                <input type="radio" class="btn-check" name="timeslot" id="slot4" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="slot4">5AM-9AM</label>
+
+                                <input type="radio" class="btn-check" name="timeslot" id="slot5" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="slot5">5AM-9AM</label>
+
+                                <input type="radio" class="btn-check" name="timeslot" id="slot6" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="slot6">5AM-9AM</label>
+                            </div>
+                        </div>
+                        <div class="row me-3 ms-5 mt-3">
+                            <div class="col-10">
+                                <input type="radio" class="btn-check" name="timeslot" id="slot7" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="slot7">5AM-9AM</label>
+
+                                <input type="radio" class="btn-check" name="timeslot" id="slot8" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="slot8">5AM-9AM</label>
+
+                                <input type="radio" class="btn-check" name="timeslot" id="slot9" autocomplete="off">
+                                <label class="btn btn-outline-danger" for="slot9">5AM-9AM</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mt-4 d-flex justify-content-center"> <a href="#"
+                                    class="btn btn-danger btn-lg w-100">Book Now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

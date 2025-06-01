@@ -1,0 +1,29 @@
+ <div class="container">
+        <div class="container-heading text-center py-2 bg-success margin">
+            <h2 class="margin">Request Data</h2>
+        </div>
+        <div class="container-body mt-5">
+            <div class="row">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">SN.</th>
+                            <th scope="col">Customer_Name</th>
+                            <th scope="col">Day</th>
+                            <th scope="col">Timing</th>
+                            <th scope="col">Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="x in serviceRequestLIst">
+                            <th scope="row">{{Id}}</th>
+                            <td>{{CustomerName}}</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>

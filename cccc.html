@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Background Image */
+        .bg-contact {
+            background: url('/call-for-service/image/bg_imge_contact.jpg') no-repeat center center;
+            background-size: cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        /* Responsive Text Alignment */
+        @media (max-width: 768px) {
+            .contact-details h3 {
+                text-align: center;
+            }
+
+            .contact-details .row {
+                justify-content: center;
+            }
+
+            .contact-form {
+                padding: 20px;
+            }
+        }
+
+        /* Social Icons Styling */
+        .social-icons a {
+            margin-right: 10px;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        /* Responsive Map */
+        .map-container {
+            width: 100%;
+            height: 300px;
+        }
+
+        /* Custom Form Styles */
+        .custom-input {
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .btn-color {
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .btn-color:hover {
+            background-color:black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Section -->
+    <div class="bg-contact">
+        <h1>Contact Us</h1>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 contact-details">
+                <h3>Headquarters</h3>
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-building fs-4 me-3"></i>
+                    <p>Murli-12, Birgunj, Parsa, Nepal <br>Pincode: 44300</p>
+                </div>
+
+                <h3>Phone</h3>
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-telephone-fill fs-4 me-3"></i>
+                    <p>+977-9802587802 <br> +977-9818273903</p>
+                </div>
+
+                <h3>Support</h3>
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-chat-dots fs-4 me-3"></i>
+                    <p>info@autosoft.com.np <br> autosoftnepal@gmail.com</p>
+                </div>
+
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="text-primary"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="text-danger"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-primary"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-8 col-md-6 mt-4 contact-form">
+                <div class="card shadow-lg p-4">
+                    <h4 class="mb-4">Let's Connect</h4>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" name="name" class="form-control custom-input" placeholder="First Name">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" name="surname" class="form-control custom-input" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <input type="email" name="email" class="form-control mb-3 custom-input" placeholder="Email Address">
+                        <input type="tel" name="number" class="form-control mb-3 custom-input" placeholder="Contact Number">
+                        <textarea name="message" class="form-control mb-3 custom-input" rows="5" placeholder="Your Message"></textarea>
+                        <button class="btn btn-color w-100 shadow-lg" type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="container mt-5">
+        <h3 class="text-center">Our Location</h3>
+        <div class="ratio ratio-16x9 map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508616!2d144.96305791531642!3d-37.81627974202147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1615185764481!5m2!1sen!2sau"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <div class="modal-content p-4" style="max-width: 400px; margin: auto;">
+        <h5 class="mb-4 text-center">Login</h5>
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password">
+            </div>
+    
+            <button type="submit" class="btn btn-warning w-100 text-white" style="background-color: #b45309; border-color: #b45309;">
+                Login
+            </button>
+    
+            <div class="text-center mt-3">
+                <a href="#" class="text-decoration-none" style="color: #b45309;">Forgot password?</a>
+            </div>
+    
+            <div class="text-center mt-2">
+                <span>Don't have an account?</span>
+            </div>
+    
+            <div class="text-center mt-2">
+                <button type="button" class="btn btn-outline-warning" id="openSignupModal" style="background-color: #b45309; color: white; border: none;">
+                    Sign Up
+                </button>
+            </div>
+        </form>
+    </div>
+    
+
+
+
+
+
+
+
+
+    
+
+    <!-- Button to Open Login Modal -->
+    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#loginModal">
+        Login
+    </button>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Login Form -->
+                    <form>
+                        <div class="form-group">
+                            <label for="loginEmail">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Enter email">
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+                        </div>
+
+                        <!-- Remember Me & Forgot Password -->
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+                            <a href="#" class="text-warning text-decoration-none">Forgot Password?</a>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex justify-content-between mt-4">
+                            <button type="submit" class="btn btn-outline-warning">Submit</button>
+                            <button type="button" class="btn btn-outline-warning" id="openSignupModal">
+                                Sign Up
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Sign Up Form -->
+                    <form>
+                        <div class="form-group">
+                            <label for="signupName">Full Name</label>
+                            <input type="text" class="form-control" id="signupName" placeholder="Enter Full Name">
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="signupEmail">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" placeholder="Enter email">
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="signupPassword">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" placeholder="Create Password">
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex justify-content-between mt-4">
+                            <button type="submit" class="btn btn-outline-success">Register</button>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap & JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("openSignupModal").addEventListener("click", function () {
+            var loginModal = new bootstrap.Modal(document.getElementById("loginModal"));
+            var signupModal = new bootstrap.Modal(document.getElementById("signupModal"));
+
+            loginModal.hide();  // Close Login Modal
+            setTimeout(() => {
+                signupModal.show();  // Open Sign Up Modal
+            }, 300);  // Delay to avoid transition conflict
+        });
+    </script>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Sign Up Form -->
+                    <form>
+                        <div class="form-group">
+                            <label for="signupName">Full Name</label>
+                            <input type="text" class="form-control" id="signupName" placeholder="Enter Full Name">
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="signupEmail">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail" placeholder="Enter email">
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="signupPassword">Password</label>
+                            <input type="password" class="form-control" id="signupPassword" placeholder="Create Password">
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex justify-content-between mt-4">
+                            <button type="submit" class="btn btn-outline-success">Register</button>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap & JavaScript -->
+   
+    <script>
+        document.getElementById("openSignupModal").addEventListener("click", function () {
+            var loginModal = new bootstrap.Modal(document.getElementById("loginModal"));
+            var signupModal = new bootstrap.Modal(document.getElementById("signupModal"));
+
+            loginModal.hide();  // Close Login Modal
+            setTimeout(() => {
+                signupModal.show();  // Open Sign Up Modal
+            }, 300);  // Delay to avoid transition conflict
+        });
+    </script>
+
+
+
+
+
+<!-- Contact Section -->
+<div class="bg-contact text-center py-5">
+    <h1 class="h1contact">Contact Us</h1>
+</div>
+
+<!-- Contact Information + Form -->
+<!-- <div class="container my-5">
+    <div class="row gy-5"> -->
+        <!-- Contact Info -->
+        <!-- <div class="col-lg-4 col-md-6">
+            <div class="contact-details">
+                <h3>Headquarters</h3>
+                <div class="d-flex align-items-start mb-3">
+                    <i class="bi bi-building fs-4 me-3"></i>
+                    <p class="mb-0">Murli-12, Birgunj, Parsa, Nepal <br>Pincode: 44300</p>
+                </div>
+
+                <h3>Phone</h3>
+                <div class="d-flex align-items-start mb-3">
+                    <i class="bi bi-telephone-fill fs-4 me-3"></i>
+                    <p class="mb-0">+977-9802587802 <br> +977-9818273903</p>
+                </div>
+
+                <h3>Support</h3>
+                <div class="d-flex align-items-start mb-3">
+                    <i class="bi bi-chat-dots fs-4 me-3"></i>
+                    <p class="mb-0">info@autosoft.com.np <br>autosoftnepal@gmail.com</p>
+                </div>
+
+                <h3>Follow Us</h3>
+                <div class="d-flex gap-3 mt-2">
+                    <a href="#" class="text-primary fs-4"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="text-dark fs-4"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="text-danger fs-4"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-primary fs-4"><i class="bi bi-facebook"></i></a>
+                </div> -->
+            <!-- </div>
+        </div> -->
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12 contact-details text-center text-md-start">
+                    <h3>Headquarters</h3>
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                        <i class="bi bi-building fs-4 me-3"></i>
+                        <p>Murli-12, Birgunj, Parsa, Nepal <br>Pincode: 44300</p>
+                    </div>
+        
+                    <h3>Phone</h3>
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                        <i class="bi bi-telephone-fill fs-4 me-3"></i>
+                        <p>+977-9802587802 <br> +977-9818273903</p>
+                    </div>
+        
+                    <h3>Support</h3>
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                        <i class="bi bi-chat-dots fs-4 me-3"></i>
+                        <p>info@autosoft.com.np <br> autosoftnepal@gmail.com</p>
+                    </div>
+        
+                    <h3>Follow Us</h3>
+                    <div class="social-icons d-flex justify-content-center justify-content-md-start gap-3 fs-4">
+                        <a href="#" class="text-primary"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" class="text-danger"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-primary"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Contact Form -->
+        <div class="col-lg-8 col-md-6">
+            <div class="card shadow-lg p-4">
+                <h4 class="mb-4 text-center">Let's Connect</h4>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <input type="email" class="form-control mb-3" placeholder="Email Address">
+                    <input type="tel" class="form-control mb-3" placeholder="Contact Number">
+                    <textarea class="form-control mb-3" rows="5" placeholder="Your Message"></textarea>
+                    <button class="btn btn-color w-100" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Map Section -->
+<div class="container mt-5">
+    <h3 class="text-center">Our Location</h3>
+    <div class="ratio ratio-16x9">
+        <iframe src="https://www.google.com/maps/embed?..." allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer mt-5 pt-5 bg-light">
+    <div class="container">
+        <div class="row gy-4">
+            <!-- Logo + Links -->
+            <div class="col-md-4 text-center text-md-start">
+                <h5 class="footer-logo">Call For Service</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 text-center text-md-start">
+                <ul class="list-unstyled mt-md-4">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-md-4 text-center text-md-start">
+                <p class="mb-2">Get the latest call for service news.</p>
+                <input type="email" class="form-control mb-2" placeholder="Your email here">
+                <button class="btn btn-outline-primary w-100">Subscribe</button>
+            </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="row mt-4">
+            <div class="col text-center">
+                <div class="d-flex justify-content-center gap-3 fs-4">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom text-center mt-3 py-3">
+            <small>Copyright © 2024 Auto Soft Pvt. Ltd. All rights reserved</small>
+        </div>
+    </div>
+</footer>
+
+
+<div class="col-lg-4 col-md-6 col-12 contact-details text-center mb-4 d-flex flex-column justify-content-center align-items-center">
+    <div class="mb-4">
+        <h3>Headquarters</h3>
+        <i class="bi bi-building fs-2 d-block mb-2"></i>
+        <p>Murli-12, Birgunj, Parsa, Nepal <br>Pincode: 44300</p>
+    </div>
+
+    <div class="mb-4">
+        <h3>Phone</h3>
+        <i class="bi bi-telephone-fill fs-2 d-block mb-2"></i>
+        <p>+977-9802587802 <br> +977-9818273903</p>
+    </div>
+
+    <div class="mb-4">
+        <h3>Support</h3>
+        <i class="bi bi-chat-dots fs-2 d-block mb-2"></i>
+        <p>info@autosoft.com.np <br> autosoftnepal@gmail.com</p>
+    </div>
+
+    <div class="mb-2">
+        <h3>Follow Us</h3>
+        <div class="d-flex justify-content-center gap-3 fs-4">
+            <a href="#" class="text-primary"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="text-danger"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-primary"><i class="bi bi-facebook"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 col-12 contact-details text-center mb-4 d-flex flex-column justify-content-center align-items-center">
+    
+    <div class="mb-4 w-100">
+        <h3>Headquarters</h3>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <i class="bi bi-building fs-2 me-md-3 mb-2 mb-md-0"></i>
+            <p class="mb-0">Murli-12, Birgunj, Parsa, Nepal <br>Pincode: 44300</p>
+        </div>
+    </div>
+
+    <div class="mb-4 w-100">
+        <h3>Phone</h3>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <i class="bi bi-telephone-fill fs-2 me-md-3 mb-2 mb-md-0"></i>
+            <p class="mb-0">+977-9802587802 <br> +977-9818273903</p>
+        </div>
+    </div>
+
+    <div class="mb-4 w-100">
+        <h3>Support</h3>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <i class="bi bi-chat-dots fs-2 me-md-3 mb-2 mb-md-0"></i>
+            <p class="mb-0">info@autosoft.com.np <br> autosoftnepal@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="mb-2">
+        <h3>Follow Us</h3>
+        <div class="d-flex justify-content-center gap-3 fs-4">
+            <a href="#" class="text-primary"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="text-danger"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-primary"><i class="bi bi-facebook"></i></a>
+        </div>
+    </div>
+
+</div>
+
+<div class="col-lg-4 col-md-6 col-12 contact-details text-center mb-4 d-flex flex-column justify-content-center align-items-center">
+    
+    <div class="mb-4 w-100">
+        <div class="d-flex flex-column align-items-center">
+            <i class="bi bi-building fs-2 mb-2"></i>
+            <h3>Headquarters</h3>
+            <p class="mb-0">Murli-12, Birgunj, Parsa, Nepal <br>Pincode: 44300</p>
+        </div>
+    </div>
+
+    <div class="mb-4 w-100">
+        <div class="d-flex flex-column align-items-center">
+            <i class="bi bi-telephone-fill fs-2 mb-2"></i>
+            <h3>Phone</h3>
+            <p class="mb-0">+977-9802587802 <br> +977-9818273903</p>
+        </div>
+    </div>
+
+    <div class="mb-4 w-100">
+        <div class="d-flex flex-column align-items-center">
+            <i class="bi bi-chat-dots fs-2 mb-2"></i>
+            <h3>Support</h3>
+            <p class="mb-0">info@autosoft.com.np <br> autosoftnepal@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="mb-2 w-100">
+        <h3>Follow Us</h3>
+        <div class="d-flex justify-content-center gap-3 fs-4">
+            <a href="#" class="text-primary"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="text-danger"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-primary"><i class="bi bi-facebook"></i></a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="d-flex align-items-center">
+    <!-- Back Button -->
+    <button class="btn btn-secondary me-2" onclick="scrollGallery(-200)">←</button>
+  
+    <!-- Gallery Container -->
+    <div id="galleryRow" class="d-flex overflow-auto" style="scroll-behavior: smooth; width: 100%;">
+      <img src="/image/electrician.webp" class="img-fluid me-2" style="max-height: 150px;">
+      <img src="/image/IT_resized.jpg" class="img-fluid me-2" style="max-height: 150px;">
+      <img src="/image/Electrician_resized.jpg" class="img-fluid me-2" style="max-height: 150px;">
+      <!-- Add more images -->
+    </div>
+  
+    <!-- Forward Button -->
+    <button class="btn btn-secondary ms-2" onclick="scrollGallery(200)">→</button>
+  </div>
+  
+  <script>
+    function scrollGallery(value) {
+      document.getElementById('galleryRow').scrollLeft += value;
+    }
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

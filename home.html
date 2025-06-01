@@ -1,0 +1,338 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div id="carouselExampleSlidesOnly" class="carousel slide caroslide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="d-block w-100" src="/image/IT_resized.jpg" alt="First slide" height="400px">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="/image/Electrician_resized.jpg" alt="Second slide"
+                            height="400px">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="d-block w-100" src="/image/Plumbing_resized.jpg" alt="Third slide" height="400px">
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex flex-column justify-content-center align-items-center"
+                style="margin-bottom: 90px;">
+                <div class="row">
+                    <!--collapse button-->
+                    <div class="col-6">
+                        <button class="btn btn-warning  btn-lg w-75 btn-homepage btn-warning mt-3" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            Searching for service?
+                        </button>
+                        <div class="collapse" id="collapseExample">
+                            <!-- Link to Open Modal -->
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="row justify-content-center g-2">
+                                        <!-- Card 1 -->
+                                        <div class="col indexcard">
+                                            <a href="#loginModal" class="text-warning text-decoration-none"
+                                                data-bs-toggle="modal" data-bs-target="">
+                                                <div class="card">
+                                                    <img src="/image/picon.png" class="card-img-top" alt="plumbing icon"
+                                                        height="100px" width="100px">
+                                                    <div class="card-body">
+                                                        <p class="card-text text-warning">Plumber </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Card 2 -->
+                                        <div class="col indexcard">
+                                            <a href="#loginModal" class="text-warning text-decoration-none"
+                                                data-bs-toggle="modal" data-bs-target="">
+                                                <div class="card">
+                                                    <img src="/image/ccicon.png" class="card-img-top"
+                                                        alt="plumbing icon" height="100px" width="100px">
+                                                    <div class="card-body">
+                                                        <p class="card-text text-warning">Cleaning </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Card 3 -->
+                                        <div class="col indexcard">
+                                            <a href="#loginModal" class="text-warning text-decoration-none"
+                                                data-bs-toggle="modal" data-bs-target="">
+                                                <div class="card">
+                                                    <img src="/image/eicon.png" class="card-img-top" alt="plumbing icon"
+                                                        height="100px" width="100px">
+                                                    <div class="card-body">
+                                                        <p class="card-text text-warning"> Electrician</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Card 4 -->
+                                        <div class="col indexcard">
+                                            <a href="#loginModal" class="text-warning text-decoration-none"
+                                                data-bs-toggle="modal" data-bs-target="">
+                                                <div class="card">
+                                                    <img src="/image/iticon.png" class="card-img-top"
+                                                        alt="plumbing icon" height="100px" width="100px">
+                                                    <div class="card-body">
+                                                        <p class="card-text text-warning">IT Support</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- LogIn Modal -->
+                            <!-- <login-placeholder></login-placeholder> -->
+                            <!-- Sign Up Modal -->
+                            <div class="modal fade" id="signupModal" tabindex="-1" data-bs-backdrop="static"
+                                aria-labelledby="signupModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- Sign Up Form -->
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="signupName">Full Name</label>
+                                                    <input type="text" class="form-control" id="signupName"
+                                                        placeholder="Enter Full Name">
+                                                </div>
+
+                                                <div class="form-group mt-3">
+                                                    <label for="signupEmail">Email address</label>
+                                                    <input type="email" class="form-control" id="signupEmail"
+                                                        placeholder="Enter email">
+                                                </div>
+
+                                                <div class="form-group mt-3">
+                                                    <label for="signupPassword">Password</label>
+                                                    <input type="password" class="form-control" id="signupPassword"
+                                                        placeholder="Create Password">
+                                                </div>
+                                                <!-- Buttons -->
+                                                <div class="d-flex justify-content-between mt-4">
+                                                    <button type="submit" class="btn btn-warning">Register</button>
+                                                    <button type="button" class="btn btn-outline-warning"
+                                                        data-bs-dismiss="modal">
+                                                        Cancel
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--button to open registration modal-->
+                    <div class="col-6 ">
+                        <button class="btn btn-warning  btn-lg w-75 btn-homepage btn-warning mt-3"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">Providing any
+                            service?</button>
+                    </div>
+                </div>
+                <!--  Registration Modal -->
+                <div class="modal fade" data-bs-backdrop="static" id="exampleModal" tabindex="-1"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content mcolor">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Registration</h5>
+                                <button type="button" class="btn-close " data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="name" class="form-label">First Name</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                                                <input type="text" id="name" class="form-control"
+                                                    placeholder="Enter First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="sur" class="form-label">Last Name</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                                <input type="text" id="sur" class="form-control"
+                                                    placeholder="Enter Last Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="em" class="form-label">Email :</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                                            <input type="email" id="em" class="form-control" placeholder="Email ID">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="num" class="form-label">Mobile No.</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i
+                                                        class="bi bi-telephone-fill"></i></span>
+                                                <input type="tel" id="num" class="form-control"
+                                                    placeholder="Enter Mobile No.">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="anum" class="form-label">Alternative Mobile No.</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                                                <input type="tel" id="anum" class="form-control"
+                                                    placeholder="Enter Alternative Mobile No.">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5 class="mt-2">Address</h5>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="city" class="form-label">City</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
+                                                <input type="tel" id="city" class="form-control"
+                                                    placeholder="Enter City">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label for="street" class="form-label">Street</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text"><i class="	bi bi-building"></i></span>
+                                                <input type="tel" id="street" class="form-control"
+                                                    placeholder="Enter Street Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5 class="mt-2">Service Eligible
+                                        For
+                                    </h5>
+                                    <div class="mt-2">
+                                        <div class="form-check form-check-inline">
+                                            <i class="bi bi-headset me-1 text-primary"></i>
+                                            <input class="form-check-input" type="radio" name="service" id="it-support">
+                                            <label class="form-check-label" for="it-support">IT Support</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <i class="bi bi-lightning me-1 text-warning"></i>
+                                            <input class="form-check-input" type="radio" name="service"
+                                                id="electrician">
+                                            <label class="form-check-label" for="electrician">Electrician</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <i class="bi bi-wrench-adjustable me-1 text-success"></i>
+                                            <input class="form-check-input" type="radio" name="service" id="plumber">
+                                            <label class="form-check-label" for="plumber">Plumber</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <i class="bi bi-bucket me-1 text-info"></i>
+                                            <input class="form-check-input" type="radio" name="service" id="cleaning">
+                                            <label class="form-check-label" for="cleaning">Cleaning</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <label for="experience" class="form-label">
+                                            <i class="bi bi-briefcase-fill me-2"></i>Years Of Experience
+                                        </label>
+                                        <input type="number" id="experience" class="form-control"
+                                            placeholder="Experience Year">
+                                    </div>
+                                    <h5 class="mt-2">Expertise Level
+                                    </h5>
+                                    <div class="mt-2">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="level" id="new-comer">
+                                            <label class="form-check-label" for="new-comer">🐣 New Comer</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="level" id="intermediate">
+                                            <label class="form-check-label" for="intermediate">🧗‍♂️
+                                                Intermediate</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="level" id="expert">
+                                            <label class="form-check-label" for="expert">🧠 Expert</label>
+                                        </div>
+                                    </div>
+                                    <h5 class="mt-2">Available Days
+                                        <div class="mt-2">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" name="level"
+                                                    id="sun">
+                                                <label class="form-check-label" for="sun">Sun</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" name="level"
+                                                    id="mon">
+                                                <label class="form-check-label" for="mon">Mon</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" name="level" id="tue">
+                                                <label class="form-check-label" for="tue">Tue</label>
+                                            </div>
+                                             <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" name="level"
+                                                    id="wed">
+                                                <label class="form-check-label" for="wed">Wed</label>
+                                            </div>
+                                             <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" name="level"
+                                                    id="thur">
+                                                <label class="form-check-label" for="thur">Thur</label>
+                                            </div>
+                                             <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" name="level"
+                                                    id="fri">
+                                                <label class="form-check-label" for="fri">Fri</label>
+                                            </div>
+                                        </div>
+                                        <h5 class="mt-2">Describe Your
+                                            Strength
+                                        </h5>
+                                        <div class="mt-2">
+                                            <label for="message" class="form-label">Details</label>
+                                            <textarea id="message" class="form-control" rows="4"
+                                                placeholder="Describe Here"></textarea>
+                                        </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <featured-placeholder></featured-placeholder>
+    <popular-placeholder></popular-placeholder>
+    <amc-placeholder></amc-placeholder>
+    <!--ratings-->
+    <div class="row m">
+        <div class="col-4 col-md-4">
+            <h1 class="rate text-danger amc"><strong>100k +</strong></h1>
+            <h3 class="amcd">Service Providers</h3>
+        </div>
+        <div class="col-4 col-md-4">
+            <h1 class="rate text-danger amc"><strong>600 +</strong></h1>
+            <h3 class="amcd">Service Delivered</h3>
+        </div>
+        <div class="col-4 col-md-4">
+            <h1 class="rate text-danger amc"><strong>700 +</strong></h1>
+            <h3 class="amcd"> Home Services</h3>
+        </div>
+    </div>
+</div>
