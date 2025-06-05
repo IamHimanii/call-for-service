@@ -2,6 +2,8 @@
 callforService.controller('HomeCtrl', function () { });
 //AboutCtrl controller
 callforService.controller('AboutCtrl', function () { });
+//ProfileCtrl controller
+callforService.controller('ProfileCtrl', function () { });
 //ContactCtrl controller
 callforService.controller('ContactCtrl', function () { });
 //FaqCtrl controller

@@ -124,7 +124,7 @@ callforService.controller('ServicedetailCtrl', function ($scope, $stateParams, $
       pricedescription: `Searching for affordable electrician services near you? Sajilo Sewa has got you covered with certified electricians. 
           Rates start at Rs. 500 for 1 hour, Rs. 1,500 for 3 hours, and Rs. 2,500 for 8 hours.`,
       dayList: ['Sun 20', 'Mon 21 ', 'Tue 22', 'Wed 23', 'Thu 24', 'Fri 25'],
-      dateList: ['3am-7pm', '2am-9pm', '3am-9pm', '8am-8pm' ],
+      dateList: ['3am-7pm', '2am-9pm', '3am-9pm', '8am-8pm','5am-4pm','3am-4pm','4am-9pm' ],
     },
     {
       Id: '8',

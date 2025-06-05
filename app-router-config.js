@@ -12,6 +12,11 @@ callforService.config(function ($stateProvider, $locationProvider, $urlRouterPro
       templateUrl: "/aboutus.html",
       controller: "AboutCtrl"
     })
+    .state('Profile', {   
+      url: '/profile',
+      templateUrl: "/profile.html",
+      controller: "ProfileCtrl"
+    })
     .state('Electricians', {
       url: '/electricians',
       templateUrl: "serviceProvider/serviceProviderElectrician.template.html",

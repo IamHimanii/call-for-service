@@ -4,10 +4,9 @@
     </div>
     <div class="container-body">
         <div class="row">
-            <div class="col-xs-12 col-sm-3" ng-repeat="service in electricianList"><!--ng-click="goToDetail(service.Id)"-->
-                  <app-card service="service"></app-card><!--  <app-card service="service"></app-card>-->
+            <div class="col-xs-12 col-sm-3" ng-repeat="service in electricianList">
                 <a ui-sref="servicedetail({id: service.Id})">
-                    <div class="card  service-card">
+                    <div class="card  service-card mt-5">
                         <img ng-src="{{service.imageUrl}}" class="card-img-top rounded" alt="image of worker"
                             height="200px" width="100px">
                         <div class="card-body">
