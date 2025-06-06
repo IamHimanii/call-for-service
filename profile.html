@@ -1,41 +1,82 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="callforService">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="angular.min.js"></script>
-    <script src="app.js"></script>
-    <script src="Navbar/navbar.component.js"></script>
-</head>
-</style>
-<navbar-placeholder></navbar-placeholder>
-<body>
-  <div class="container">
-    <div class="container-heading">
-    <h1>Profile</h1>
+<div class="container margin-for-all">
+  <div class="container-heading">
+    <!-- <h1 class="text-center">Profile</h1> -->
   </div>
-  <div class="container-body">
-   <div class="row">
-     <div class="col-2">
-        <img src="/image/cleaning/bathroom.jpg" alt="" class="rounded-circle float-start" style="height: 150px; width: 150px;">
-    </div>
-    <div class="col-3">
-        <h3>Himani Karn</h3>
-        <p><i class="fas fa-map-marker-alt"></i> birgunj, nepal</p>
-    </div>
-   </div>
-    <div class="col-4">
-
+  <div class="container-body mt-5">
+    <div class="row margin">
+      <div class="col-2">
+        <img src="/image/cleaning/bathroom.jpg" alt="" class="rounded-circle float-start"
+          style="height: 150px; width: 150px;">
+      </div>
+      <div class="col-4 mt-3">
+        <h4><strong>Himani Karn</strong></h3>
+          <p class="text-secondary"><i class="fas fa-map-marker-alt"></i> birgunj, nepal</p>
+          <button class="btn btn-danger float-end" data-bs-toggle="modal" data-bs-target="#profileModal">+ Add</button>
+      </div>
+      <div class="col-6">
+        <form action="" class="form-border">
+          <h4 class="mb-4 mt-2"><strong>Profile Detail</strong></h4>
+          <div class="form-color">
+            <span><i class="bi bi-person text-dark me-2"></i><strong>Name</strong></span><br>
+            <span class="text-secondary">Himani Karn<i class="bi bi-pencil-square ms-3 text-danger"></i></span>
+          </div>
+          <div class="form-color mt-3">
+            <span><i class="bi bi-envelope text-dark me-3"></i><strong>Email</strong></span><br>
+            <span class="text-secondary">abc123@gmail.com<i class="bi bi-pencil-square ms-3 text-danger"></i></span>
+          </div>
+          <div class="form-color mt-3">
+            <span><i class="bi bi-telephone text-dark me-3"></i><strong>Phone Number</strong></span><br>
+            <span class="text-secondary">9988778300<i class="bi bi-pencil-square ms-3 text-danger"></i></span>
+          </div>
+          <div class="form-color mt-3">
+            <span><i class="bi bi-geo-alt text-dark me-3"></i><strong>Address</strong></span><br>
+            <span class="text-secondary">Birgunj<i class="bi bi-pencil-square ms-3 text-danger"></i></span>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
+  <!-- Modal -->
+  <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="contactname" class="form-label">Contact Name</label>
+              <input id="contactname" type="email" class="form-control">
+            </div>
+            <div id="emailError" class="error"></div>
+            <div class="mb-3">
+              <label for="contactnumber" class="form-label">Phone Number</label>
+              <input id="contactnumber" type="password" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="address" class="form-label">Address</label>
+              <input id="address" type="password" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="landmark" class="form-label">Landmark</label>
+              <input id="landmark" type="password" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="landmark" class="form-label">Address Type</label>
+              <select id="landmark" class="form-select">
+                <option value="home">Home</option>
+                <option value="office">Office</option>
+              </select>
+            </div>
+            <div id="passwordError" class="error"></div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-color">+ Add Address</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
-</body>
-
-</html>
+</div>

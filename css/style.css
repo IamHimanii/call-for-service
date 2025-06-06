@@ -543,3 +543,17 @@ li::marker {
 .gallery-thumb.active {
     border: 2px solid #007bff;
 }
+.form-border{
+    border: 2px solid  #D8E1D6;
+    padding: 20px;
+    border-radius: 10px; /* Same radius for all 4 corners */
+}
+.form-color{
+    background-color: #D8E1D6;
+    padding: 10px 0 10px 10px;
+     border-radius: 10px;
+}
+.margin-for-all{
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
