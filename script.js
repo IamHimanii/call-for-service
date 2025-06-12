@@ -81,27 +81,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 //
 
-    const mainImage = document.getElementById('mainImage');
-    let zoomLevel = 1;
-
-    document.querySelectorAll('.thumb').forEach(thumb => {
-        thumb.addEventListener('click', () => {
-            const newSrc = thumb.getAttribute('data-full');
-            mainImage.src = newSrc;
-            zoomLevel = 1;
-            mainImage.style.transform = `scale(${zoomLevel})`;
-        });
-    });
-
-    function zoom(direction) {
-        if (direction === 'in') {
-            zoomLevel += 0.1;
-        } else if (direction === 'out' && zoomLevel > 0.2) {
-            zoomLevel -= 0.1;
-        }
-        mainImage.style.transform = `scale(${zoomLevel})`;
-    }
-
-
+  
 
   

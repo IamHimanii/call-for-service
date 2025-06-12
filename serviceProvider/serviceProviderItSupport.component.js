@@ -8,7 +8,7 @@ angular.module('callforService').component('supportPlaceholder', {
             imageUrl:'image/itSupport/antivirus.jpg',
             link: 'serviceProviderDetail.html',
             post:'Anti-virus/malware protection',
-            currentrating:'5.0',
+            currentrating:'5.0',  
             rating:'(0)',
             rate:'Rs.7700 / Hour',
             description:'Looking for Electrician in Birgunj?',

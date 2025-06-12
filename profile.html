@@ -1,6 +1,6 @@
-<div class="container margin-for-all">
+<!-- <div class="container margin-for-all">
+
   <div class="container-heading">
-    <!-- <h1 class="text-center">Profile</h1> -->
   </div>
   <div class="container-body mt-5">
     <div class="row margin">
@@ -36,7 +36,7 @@
       </div>
     </div>
   </div>
-  <!-- Modal -->
+
   <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -79,4 +79,77 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
+<div class="container my-5 ">
+    <div class="row margin  margin-for-all">
+      <!-- Sidebar Navigation -->
+      <div class="col-md-3 mb-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active" id="profile-tab" data-bs-toggle="pill" data-bs-target="#profile" type="button"
+            role="tab">👤 Profile Info</button>
+          <button class="nav-link" id="orders-tab" data-bs-toggle="pill" data-bs-target="#orders" type="button"
+            role="tab">📦 My Orders</button>
+          <button class="nav-link" id="address-tab" data-bs-toggle="pill" data-bs-target="#address" type="button"
+            role="tab">📍 Addresses</button>
+          <button class="nav-link" id="pass-tab" data-bs-toggle="pill" data-bs-target="#pass" type="button"
+            role="tab">🔒
+            Change Password</button>
+          <button class="nav-link text-danger" id="logout-tab" data-bs-toggle="pill" data-bs-target="#logout"
+            type="button" role="tab">⏏️ Logout</button>
+        </div>
+      </div>
+
+      <!-- Content Area -->
+      <div class="col-md-9">
+        <div class="tab-content border rounded p-4 bg-white" id="v-pills-tabContent">
+
+          <div class="tab-pane fade show active" id="profile" role="tabpanel">
+            <h4>👤 Profile Information</h4>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john@example.com</p>
+            <p><strong>Phone:</strong> +977 9876543210</p>
+          </div>
+
+          <div class="tab-pane fade" id="orders" role="tabpanel">
+            <h4>📦 My Orders</h4>
+            <p>You haven't placed any orders yet.</p>
+          </div>
+
+          <div class="tab-pane fade" id="address" role="tabpanel">
+            <h4>📍 My Addresses</h4>
+            <p>No addresses saved.</p>
+          </div>
+
+          <div class="tab-pane fade" id="pass" role="tabpanel">
+            <h4>🔒 Change Password</h4>
+            <form>
+              <div class="mb-3">
+                <label for="currentPass" class="form-label">Current Password</label>
+                <input type="password" class="form-control" id="currentPass">
+              </div>
+              <div class="mb-3">
+                <label for="newPass" class="form-label">New Password</label>
+                <input type="password" class="form-control" id="newPass">
+              </div>
+              <div class="mb-3">
+                <label for="confirmPass" class="form-label">confirm Password</label>
+                <input type="password" class="form-control" id="confirmPass">
+              </div>
+              <button type="submit" class="btn btn-warning">Update Password</button>
+            </form>
+          </div>
+
+          <div class="tab-pane fade" id="address" role="tabpanel">
+
+          </div>
+
+          <div class="tab-pane fade" id="logout" role="tabpanel">
+            <h4>⏏️ Logout</h4>
+            <p>Are you sure you want to logout?</p>
+            <button class="btn btn-warning">Confirm Logout</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

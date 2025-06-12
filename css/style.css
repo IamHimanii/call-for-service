@@ -374,6 +374,7 @@ p {
 
 .bcolor {
     background-color: #FFE4E1;
+    border-radius: 10px;
 }
 
 .procolor {
@@ -528,7 +529,6 @@ p {
 .section {
     margin-top: 2rem;
 }
-
 li::marker {
     color: #0056b3;
 }

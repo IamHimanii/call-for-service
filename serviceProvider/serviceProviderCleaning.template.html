@@ -7,29 +7,29 @@
             <div class="col-xs-12 col-sm-3" ng-repeat="service in cleanerList">
                 <a  ui-sref="clearnerServiceDetail({id: service.Id})">
                     <div class="card  service-card mt-5">
-                        <img ng-src="{{service.imageUrl}}" class="card-img-top rounded" alt="image of worker"
+                        <img ng-src="{{service.ImageUrl}}" class="card-img-top rounded" alt="image of worker"
                             height="200px" width="100px">
                         <div class="card-body">
-                            <p class="card-text"><strong>{{service.post}}</strong></p>
+                            <p class="card-text"><strong>{{service.Post}}</strong></p>
                             <div class="row">
                                 <div class="col">
                                     <h6>Call for Service</h6>
                                 </div>
-                                <div class="col d-flex justify-content-end">
+                                <div class="col d-flex justify-content-end">  
                                     <span class="fa fa-star checked text-warning me-1"></span>
                                     <span class="me-1">
-                                        <h6><strong>{{service.currentrating}}</strong></h6>
+                                        <h6><strong>{{service.Currentrating}}</strong></h6>
                                     </span>
                                     <span>
-                                        <h6>{{(service.rating)}}</h6>
+                                        <h6>{{(service.Rating)}}</h6>
                                     </span>
                                 </div>
                             </div>
                             <div>
-                                <h6 class="text-danger">{{service.rate}}</h6>
+                                <h6 class="text-danger">{{service.Rate}}</h6>
                             </div>
                             <div>
-                                <p>{{service.description}}</p>
+                                <p>{{service.Description}}</p>
                             </div>
                         </div>
                     </div>

@@ -63,7 +63,7 @@
                         <h5><strong>Choose a time period</strong></h5>
                         <h6>Team will arrive within the selected time</h6>
                     </div>
-                    <div class="d-flex flex-row gap-2">
+                    <div class="d-flex flex-row flex-wrap gap-2">
                         <div ng-repeat="date in serviceDetail.dateList">
                             <input type="radio" class="btn-check" name="date" id="{{date}}" value="{{date}}" 
                             ng-model="selectedDate" autocomplete="off">

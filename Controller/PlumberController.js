@@ -3,7 +3,7 @@ callforService.controller('PlumbercardCtrl', function ($scope) {
   $scope.plumberList = [
     {
       Id: '1',
-      imageUrl: 'image/plumber/basin.avif',
+      ImageUrl: 'image/plumber/basin.avif',
       post: 'Wash basin installation',
       currentrating: '5.0',
       rating: '(0)',

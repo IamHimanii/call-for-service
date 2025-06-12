@@ -100,20 +100,18 @@
                                             <form>
                                                 <div class="form-group">
                                                     <label for="signupName">Full Name</label>
-                                                    <input type="text" class="form-control" id="signupName"
+                                                    <input type="text" class="form-control" id="signupName" name="sname"
                                                         placeholder="Enter Full Name">
                                                 </div>
-
                                                 <div class="form-group mt-3">
                                                     <label for="signupEmail">Email address</label>
                                                     <input type="email" class="form-control" id="signupEmail"
-                                                        placeholder="Enter email">
+                                                        name="semail" placeholder="Enter email">
                                                 </div>
-
                                                 <div class="form-group mt-3">
                                                     <label for="signupPassword">Password</label>
                                                     <input type="password" class="form-control" id="signupPassword"
-                                                        placeholder="Create Password">
+                                                        name="spassword" placeholder="Create Password">
                                                 </div>
                                                 <!-- Buttons -->
                                                 <div class="d-flex justify-content-between mt-4">
@@ -148,13 +146,13 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form>
+                                <form id="registration">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <label for="name" class="form-label">First Name</label>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-                                                <input type="text" id="name" class="form-control"
+                                                <input type="text" id="name" class="form-control" name="regfname"
                                                     placeholder="Enter First Name">
                                             </div>
                                         </div>
@@ -162,7 +160,7 @@
                                             <label for="sur" class="form-label">Last Name</label>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="bi bi-person"></i></span>
-                                                <input type="text" id="sur" class="form-control"
+                                                <input type="text" id="sur" class="form-control" name="reglname"
                                                     placeholder="Enter Last Name">
                                             </div>
                                         </div>
@@ -171,15 +169,17 @@
                                         <label for="em" class="form-label">Email :</label>
                                         <div class="input-group">
                                             <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
-                                            <input type="email" id="em" class="form-control" placeholder="Email ID">
+                                            <input type="email" id="em" class="form-control" name="regemail"
+                                                placeholder="Email ID">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <label for="num" class="form-label">Mobile No.</label>
                                             <div class="input-group">
-                                                <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
-                                                <input type="tel" id="num" class="form-control"
+                                                <span class="input-group-text"><i
+                                                        class="bi bi-telephone-fill"></i></span>
+                                                <input type="tel" id="num" class="form-control" name="regmobile"
                                                     placeholder="Enter Mobile No.">
                                             </div>
                                         </div>
@@ -187,7 +187,7 @@
                                             <label for="anum" class="form-label">Alternative Mobile No.</label>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="bi bi-telephone"></i></span>
-                                                <input type="tel" id="anum" class="form-control"
+                                                <input type="tel" id="anum" class="form-control" name="regatmobile"
                                                     placeholder="Enter Alternative Mobile No.">
                                             </div>
                                         </div>
@@ -198,7 +198,7 @@
                                             <label for="city" class="form-label">City</label>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
-                                                <input type="tel" id="city" class="form-control"
+                                                <input type="tel" id="city" class="form-control" name="regadddress"
                                                     placeholder="Enter City">
                                             </div>
                                         </div>
@@ -206,7 +206,7 @@
                                             <label for="street" class="form-label">Street</label>
                                             <div class="input-group">
                                                 <span class="input-group-text"><i class="	bi bi-building"></i></span>
-                                                <input type="tel" id="street" class="form-control"
+                                                <input type="tel" id="street" class="form-control" name="regstreet"
                                                     placeholder="Enter Street Name">
                                             </div>
                                         </div>
@@ -242,55 +242,51 @@
                                         <label for="experience" class="form-label">
                                             <i class="bi bi-briefcase-fill me-2"></i>Years Of Experience
                                         </label>
-                                        <input type="number" id="experience" class="form-control"
+                                        <input type="number" id="experience" class="form-control" name="experience"
                                             placeholder="Experience Year">
                                     </div>
                                     <h5 class="mt-2">Expertise Level
                                     </h5>
                                     <div class="mt-2">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="level" id="new-comer">
+                                            <input class="form-check-input" type="radio" name="level1" id="new-comer">
                                             <label class="form-check-label" for="new-comer">🐣 New Comer</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="level" id="intermediate">
+                                            <input class="form-check-input" type="radio" name="level2"
+                                                id="intermediate">
                                             <label class="form-check-label" for="intermediate">🧗‍♂️
                                                 Intermediate</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="level" id="expert">
+                                            <input class="form-check-input" type="radio" name="level3" id="expert">
                                             <label class="form-check-label" for="expert">🧠 Expert</label>
                                         </div>
                                     </div>
                                     <h5 class="mt-2">Available Days
                                         <div class="mt-2">
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" name="level"
-                                                    id="sun">
+                                                <input class="form-check-input" type="checkbox" name="sun" id="sun">
                                                 <label class="form-check-label" for="sun">Sun</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" name="level"
-                                                    id="mon">
+                                                <input class="form-check-input" type="checkbox" name="mon" id="mon">
                                                 <label class="form-check-label" for="mon">Mon</label>
                                             </div>
                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" name="level" id="tue">
+                                                <input class="form-check-input" type="checkbox" name="tue" id="tue">
                                                 <label class="form-check-label" for="tue">Tue</label>
                                             </div>
-                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" name="level"
-                                                    id="wed">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" name="wed" id="wed">
                                                 <label class="form-check-label" for="wed">Wed</label>
                                             </div>
-                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" name="level"
-                                                    id="thur">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" name="thu" id="thur">
                                                 <label class="form-check-label" for="thur">Thur</label>
                                             </div>
-                                             <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" name="level"
-                                                    id="fri">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" name="fri" id="fri">
                                                 <label class="form-check-label" for="fri">Fri</label>
                                             </div>
                                         </div>
@@ -333,3 +329,10 @@
         </div>
     </div>
 </div>
+<script>
+    let loginform = document.querySelector("#registration");
+    console.log(loginform)
+loginform.addEventListener("submit", (event) => {
+  alert("hello");
+});
+</script>
